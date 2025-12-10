@@ -220,6 +220,10 @@ body {
   gap: 10px;
 }
 
+.add-to-cart:hover {
+  background: var(--clr-green-700);
+}
+
 .cart-icon {
   width: 16px;
   height: 16px;
