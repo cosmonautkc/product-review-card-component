@@ -74,6 +74,16 @@ h6 {
   isolation: isolate;
 }
 
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  /* padding-top: 100px; */
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 /* Design system */
 :root {
   /* Colours */
@@ -84,4 +94,134 @@ h6 {
   --clr-grey: hsl(228, 12%, 48%);
   --clr-cream: hsl(30, 38%, 92%);
   --clr-white: hsl(0, 0%, 100%);
+
+  /* Fonts */
+  --font-main: "Montserrat", sans-serif;
+  --font-info: "Fraunces", Verdana;
+
+  /* Font sizes */
+  --size-xxs: 10px;
+  --size-xs: 11px;
+  --size-body: 13px;
+  --size-xl: 28px;
+
+  /* Spacing */
+  --space-50: 12px;
+  --space-100: 18px;
+  --space-200: 28px;
+}
+
+/* Utility classes */
+
+body {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-cream);
+  font-size: var(--size-body);
+  font-family: var(--font-main);
+  font-weight: 500;
+  color: var(--clr-grey);
+}
+
+.container {
+  width: 320px;
+  height: auto;
+  margin: auto;
+  background-color: var(--clr-white);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: var(--space-200);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-100);
+}
+
+.mobile-img {
+  width: 320px;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.desktop-img {
+  width: 250px;
+  height: auto;
+  display: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+@media (min-width: 50rem) {
+  .container {
+    width: 520px;
+    height: auto;
+    flex-direction: row;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .desktop-img {
+    display: block;
+  }
+}
+
+.product-type {
+  font-size: var(--size-xxs);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.product-title {
+  font-size: var(--size-xl);
+  font-family: var(--font-info);
+  font-weight: 700;
+  color: var(--clr-black);
+  line-height: 100%;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  gap: var(--space-100);
+}
+
+.price-new {
+  font-size: var(--size-xl);
+  font-family: var(--font-info);
+  font-weight: 700;
+  color: var(--clr-green-500);
+}
+
+.price-old {
+  font-size: var(--size-xs);
+  text-decoration: line-through;
+}
+
+.add-to-cart {
+  background-color: var(--clr-green-500);
+  color: var(--clr-white);
+  border: none;
+  border-radius: 8px;
+  padding: var(--space-50);
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
 }
