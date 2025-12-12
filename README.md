@@ -17,8 +17,8 @@ This is my solution for the Product preview card component. The goal was to recr
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [https://cosmonautkc.github.io/product-review-card-component/](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/product-preview-card-component-t6MX_gAp54](FM Solution)
+- Live Site URL: [https://cosmonautkc.github.io/product-review-card-component/](Live Site)
 
 ### Built with
 
@@ -32,6 +32,8 @@ This is my solution for the Product preview card component. The goal was to recr
 ### What I learned
 
 I learnt more about how flexbox works in terms of responsive design and what styles have to be reconsidered when moving from a column layout to a row layout. I also improved my ability to create css tokens and think clearly on how to structure them for scalability and debugging.
+
+refactor WIL: I challenged myself to go beyond mobile - desktop responsive design, and instead used max-width and % width to set limits and have the card scale instead of fixed widths and no gradual scale. I learnt more about positioning and how images work when they're on their own, as opposed to being put in a container. I was able to get the outcome I envisioned through going back to fundamentals of flexbox and dimensions, also learning new and helpful information about relative units of measurement(%, vw, r/em), compared to absolute(px), and when is appropriate to use each in responsive layouts.
 
 ### Continued development
 
