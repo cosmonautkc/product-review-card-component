@@ -17,8 +17,8 @@ This is my solution for the Product preview card component. The goal was to recr
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/product-preview-card-component-t6MX_gAp54](FM Solution)
-- Live Site URL: [https://cosmonautkc.github.io/product-review-card-component/](Live Site)
+- Solution URL: https://www.frontendmentor.io/solutions/product-preview-card-component-t6MX_gAp54
+- Live Site URL: https://cosmonautkc.github.io/product-review-card-component/
 
 ### Built with
 
